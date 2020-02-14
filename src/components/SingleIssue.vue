@@ -3,7 +3,8 @@
     <h2>
       {{ issue.title }}
     </h2>
-      <comments :id="id"/>
+    <div v-html="issue.body"></div>
+    <comments :id="id"/>
   </div>
 </template>
 
