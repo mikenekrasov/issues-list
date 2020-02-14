@@ -1,5 +1,4 @@
 .issues {
-  margin-top:100px;
 
   &-header {
 	border-top-left-radius: 5px;
@@ -16,10 +15,35 @@
 
 	&__item {
 	  display: flex;
+	  flex-direction: row;
 	  border-left: 1px solid #d1d5da;
 	  border-right: 1px solid #d1d5da;
 	  border-bottom: 1px solid #d1d5da;
 	  padding: 10px;
+	  position: relative;
+	}
+
+	&__issue-open {
+	  color: #28a745;
+	  fill: currentColor;
+	}
+
+	&__issue-closed {
+	  color: #cb2431;
+	  fill: currentColor;
+	}
+
+	&__data {
+	  display: flex;
+	  flex-direction: column;
+	  margin-left: 8px;
+	}
+
+	&__comments {
+	  text-align: right;
+	  width: 25%;
+	  margin-left: auto;
+	  flex-shrink: 0;
 	}
 
 	&__link {
