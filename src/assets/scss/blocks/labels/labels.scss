@@ -1,0 +1,12 @@
+.labels {
+
+  &__item {
+	font-size: 12px;
+	padding: .15em 4px;
+
+	& + &.labels__item {
+	  margin-left: 5px;
+	}
+  }
+
+}
