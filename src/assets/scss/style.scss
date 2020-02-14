@@ -1,6 +1,8 @@
+@import "media";
+
 @import "blocks/issues/issues.scss";
-@import "blocks/pagination/pagination.scss";
 @import "blocks/comments/comments.scss";
+@import "blocks/labels/labels.scss";
 
 html {
   height: 100%;
@@ -43,5 +45,10 @@ ul {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   font-size: 16px;
+}
+
+.home {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
