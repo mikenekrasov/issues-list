@@ -1,8 +1,9 @@
 <template>
   <ul class="comments-list">
     <li v-for="(comment, i) in comments" :key="i" class="comments__item">
+      <img :src="comment.user.avatar_url" class="comments__avatar" alt="avatar">
       <div class="comments__name">{{ comment.user.login }}</div>
-      <div class="comments__content">{{ comment.body }}</div>
+      <p class="comments__content">{{ comment.body }}</p>
     </li>
   </ul>
 </template>
